@@ -21,7 +21,13 @@
   "cds": {
     "requires": {
       "auth":{
-        "kind": "mocked"
+        "kind": "basic",
+        "users": {
+          "admin":{
+            "password": "12345",
+            "roles": ["Admin"]
+          }
+        }
       }
     }
   }
