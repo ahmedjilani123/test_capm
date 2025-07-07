@@ -6,6 +6,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@cap-js-community/odata-v2-adapter": "^1.15.2",
     "@sap/cds": "^8",
     "@sap/xsenv": "^5.6.1",
     "@sap/xssec": "^4.8.0",
@@ -20,12 +21,14 @@
   },
   "cds": {
     "requires": {
-      "auth":{
+      "auth": {
         "kind": "basic",
         "users": {
-          "admin":{
+          "admin": {
             "password": "12345",
-            "roles": ["Admin"]
+            "roles": [
+              "Admin"
+            ]
           }
         }
       }
